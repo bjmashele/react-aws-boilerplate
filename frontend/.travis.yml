@@ -1,4 +1,6 @@
 sudo: required
+language: generic
+
 services:
   - docker
 
@@ -7,4 +9,3 @@ before_install:
 
 script:
   - docker run -e CI=true bjmashele/react-aws-boilerplate npm run test # Use -e CI=true to override npm run test default behavior.
-  
